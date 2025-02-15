@@ -1,20 +1,20 @@
 package raisetech.studentmanagement.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
+import java.time.LocalDate;
 @Getter
 @Setter
 public class Student {
-   private String studentId;
-   private String FullName;
-   private String Furigana;
-   private String NickName;
-   private String Email;
-   private String Address;
-   private String Age;
-   private String Gender;
-   private String EnrollmentDate;
+
+   private Long id;
+   private String fullName;
+   private String furigana;
+   private String nickName;
+   private String email;
+   private String address;
+   private int age;
+   private String gender;
+   private LocalDate enrollmentDate;
    private String remark;
-   private boolean isDeleted;
 }
