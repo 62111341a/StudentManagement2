@@ -36,6 +36,8 @@
             <option value="">選択してください</option>
             <option th:each="course : ${courseList}" th:value="${course.id}" th:text="${course.fullName}"></option>
 
+
+
         </select>
         <button type="submit">登録</button>
     </div>
